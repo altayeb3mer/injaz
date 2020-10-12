@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.altayeb.injaz.Layout_print_translate">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:id="@+id/B1"
+                    android:background="@drawable/img_englishtr"
+                    android:layout_margin="1dp"
+                    android:tag="A11"
+                    android:onClick="onclick"/>
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:id="@+id/B2"
+                    android:background="@drawable/img_fr"
+                    android:padding="3dp"
+                    android:layout_margin="1dp"
+                    android:tag="A19"
+                    android:onClick="onclick"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:id="@+id/B3"
+                    android:background="@drawable/img_print"
+                    android:layout_margin="1dp"
+                    android:onClick="onclick"
+                    android:tag="A24"/>
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:id="@+id/B4"
+                    android:layout_margin="1dp"
+                    android:tag="A23"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

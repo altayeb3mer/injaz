@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.altayeb.injaz.profile"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lightGray">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@color/colorPrimaryDark">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:paddingBottom="5dp"
+                    app:civ_border_color="@color/colorPrimary"
+                    app:civ_border_width="2dp"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:id="@+id/cimgview"
+                    android:src="@drawable/prologo"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Pro_username"
+                    android:text="الاسم ثلاثي"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingBottom="10dp"
+                    android:textColor="@color/white"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_gravity="right"
+                android:gravity="right">
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:gravity="right"
+                    android:layout_gravity="right"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="10dp">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:visibility="gone"
+                        android:paddingBottom="5dp"
+                        app:civ_border_color="@color/colorPrimary"
+                        app:civ_border_width="2dp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/whatsapp_logo"
+                        android:src="@drawable/whatsapp_logo"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="10dp" />
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:paddingBottom="5dp"
+                        app:civ_border_color="@color/colorPrimary"
+                        app:civ_border_width="2dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/call_logo"
+                        android:src="@drawable/call_logo"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"/>
+
+                    <TextView
+                        android:paddingRight="5dp"
+                        android:layout_width="wrap_content"
+                        android:gravity="right"
+                        android:layout_height="wrap_content"
+                        android:text="الهاتف الصحيح"
+                        android:id="@+id/Pphone"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:drawableRight="@drawable/ic_phone_iphone_black_24dp"
+                        android:drawablePadding="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="الهاتف :"
+                        android:id="@+id/textView11"
+                        android:textSize="18sp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:paddingRight="10dp"
+                    android:orientation="horizontal"
+                    android:gravity="right"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:paddingRight="5dp"
+                        android:layout_width="wrap_content"
+                        android:gravity="right"
+                        android:layout_height="wrap_content"
+                        android:text="اختيار الجنس"
+                        android:id="@+id/Pgender"
+                        android:textSize="18sp" />
+                    <TextView
+                        android:drawableRight="@drawable/ic_person_outline_black_24dp"
+                        android:drawablePadding="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="الجنس :"
+                        android:id="@+id/textView1211"
+                        android:textSize="18sp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:paddingRight="10dp"
+                    android:gravity="right"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="5dp">
+
+
+                    <TextView
+                        android:paddingRight="5dp"
+                        android:layout_width="wrap_content"
+                        android:gravity="right"
+                        android:layout_height="wrap_content"
+                        android:text="اختيار النوع"
+                        android:id="@+id/Pdept"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:drawableRight="@drawable/ic_school_black_24dp"
+                        android:drawablePadding="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="يعمل كـ:"
+                        android:id="@+id/textView111"
+                        android:textSize="18sp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:gravity="right">
+
+
+
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:paddingRight="10dp"
+                    android:gravity="right"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="10dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:drawableRight="@drawable/ic_person_outline_black_24dp"
+                        android:drawablePadding="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="حول المستخدم  :"
+                        android:id="@+id/textView12"
+                        android:textSize="18sp"
+                        android:textStyle="bold"/>
+
+
+                    <TextView
+                        android:padding="15dp"
+                        android:layout_width="match_parent"
+                        android:gravity="right"
+                        android:text="غير معروف"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/aboutuser"
+                        android:textSize="18sp"
+                        android:layout_weight="2.43"
+                        android:paddingBottom="10dp"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

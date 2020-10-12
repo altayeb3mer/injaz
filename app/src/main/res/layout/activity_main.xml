@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/lightGray"
+    tools:context="com.example.altayeb.injaz.MainActivity">
+
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textDirection="anyRtl"
+        android:background="@color/colorPrimaryDark"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="35dp"
+            android:textColor="#ffffff"
+            android:textDirection="anyRtl"
+            android:text="مرحبا بك في إنجاز "
+            android:id="@+id/welcome"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:text="@string/abstraction"
+            android:textDirection="anyRtl"
+            android:layout_marginTop="15dp"
+            android:id="@+id/hint"
+            android:layout_weight="0.36"
+            android:paddingTop="20dp"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp" />
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="right">
+            <Button
+                android:background="@drawable/buttonstylepink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textColor="#fff"
+                android:textSize="22px"
+                android:textStyle="bold"
+                android:text="إنضم للتطبيق"
+                android:onClick="nextpage"
+                android:id="@+id/btn_signup" />
+            <Button
+                android:background="@drawable/buttonstylewhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="22px"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:text="الدخول كضيف"
+                android:onClick="nextpage"
+                android:id="@+id/btn_guest" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+        <LinearLayout
+            android:background="@color/white"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+        <EditText
+            android:drawableRight="@drawable/ic_phone_iphone_black_24dp"
+            android:drawablePadding="10dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="رقم الهاتف"
+            android:inputType="number"
+            android:maxLength="10"
+            android:id="@+id/phone_no" />
+
+        <EditText
+            android:drawableRight="@drawable/ic_lock_outline_black_24dp"
+            android:drawablePadding="10dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="كلمة السر"
+            android:id="@+id/edtpassword"
+            android:inputType="textPassword"
+            android:gravity="right"/>
+        <Button
+            android:drawableLeft="@drawable/ic_send_black_24dp"
+            android:drawablePadding="0dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/buttonstylepink"
+            android:textSize="22px"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:text="دخول"
+            android:onClick="nextpage"
+            android:id="@+id/btn_login" />
+    </LinearLayout>
+        </LinearLayout>
+
+</LinearLayout>

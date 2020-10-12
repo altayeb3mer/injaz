@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.altayeb.injaz.AboutUs">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:nestedScrollingEnabled="false"
+        android:transitionGroup="false"
+        android:background="@color/colorPrimaryDark">
+
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="130dp"
+                android:src="@drawable/gw_logo" />
+
+            <LinearLayout
+                android:gravity="right"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/gw"
+                    android:textColor="#00ff8c"
+                    android:padding="10dp"
+                    android:id="@+id/gw"
+                    android:textSize="20dp" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="right"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/ourscop"
+                    android:textColor="@color/white"
+                    android:padding="10dp"
+                    android:id="@+id/our_scope"
+                    android:textSize="20dp" />
+
+
+            </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:paddingTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="20dp">
+            <LinearLayout
+                android:paddingRight="20dp"
+                android:gravity="right"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/contactus"
+                    android:textColor="#00ff8c"
+                    android:id="@+id/contact_us"
+                    android:textSize="20dp" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:paddingRight="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="#2c07fa">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:paddingBottom="5dp"
+                    app:civ_border_color="@color/colorPrimary"
+                    app:civ_border_width="2dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/call_logo_aboutus"
+                    android:src="@drawable/call_logo"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/contactus"
+                    android:textColor="@color/white"
+                    android:padding="10dp"
+                    android:id="@+id/aboutus_phone_no"
+                    android:textSize="20dp" />
+
+
+
+            </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        </ScrollView>
+
+</RelativeLayout>

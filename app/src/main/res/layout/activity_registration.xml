@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.altayeb.injaz.registration"
+    android:background="@color/lightGray">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lightGray">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal">
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/registeration_logo"
+            />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal">
+
+        <EditText
+            android:drawableRight="@drawable/ic_phone_iphone_black_24dp"
+            android:drawablePadding="10dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="رقم الهاتف النشط"
+            android:id="@+id/phone_no"
+            android:inputType="number"
+            android:maxLength="10"
+            android:paddingTop="20dp" />
+
+        <EditText
+            android:drawableRight="@drawable/ic_person_outline_black_24dp"
+            android:drawablePadding="10dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="الاسم ثلاثي"
+            android:id="@+id/full_name"
+            android:paddingTop="20dp"
+            android:maxLength="25"/>
+
+        <EditText
+            android:drawableRight="@drawable/ic_lock_outline_black_24dp"
+            android:drawablePadding="10dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="كلمة السر"
+            android:id="@+id/edt_password"
+            android:paddingTop="20dp"
+            android:maxLength="10"
+            android:inputType="textPassword"
+            android:gravity="right"/>
+        <EditText
+            android:drawableRight="@drawable/ic_lock_outline_black_24dp"
+            android:drawablePadding="10dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="أعد كتابة كلمة السر"
+            android:id="@+id/edt_confirmPassword"
+            android:paddingTop="20dp"
+            android:inputType="textPassword"
+            android:gravity="right"/>
+        <Button
+            android:drawableLeft="@drawable/ic_send_black_24dp"
+            android:drawablePadding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/buttonstylepink"
+            android:textSize="25px"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:text="تسجيل"
+            android:onClick="nextpage"
+            android:id="@+id/btn_signup"
+            android:padding="20dp" />
+
+    </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

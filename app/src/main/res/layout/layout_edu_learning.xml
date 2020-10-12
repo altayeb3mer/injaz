@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.altayeb.injaz.Layout_edu_learning">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:id="@+id/B1"
+                    android:background="@drawable/img_eduenglish"
+                    android:layout_margin="1dp"
+                    android:tag="A17"
+                    android:onClick="onclick"/>
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:id="@+id/B2"
+                    android:background="@drawable/img_educomputer"
+                    android:padding="3dp"
+                    android:layout_margin="1dp"
+                    android:tag="A18"
+                    android:onClick="onclick"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title="تحديث الموقع"
+        android:id="@+id/id_update_location"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_my_location_black_24dp"
+        app:showAsAction="withText|always" />
+    <item
+        android:title="خروج"
+        android:id="@+id/id_exit"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_exit"
+        app:showAsAction="always" />
+
+    <item
+        android:title="تسجيل خروج"
+        android:id="@+id/id_signout"
+        android:orderInCategory="101"
+        android:icon="@drawable/ic_sign_out"
+        app:showAsAction="never"/>
+    <item
+        android:title="ملفي الشخصي"
+        android:id="@+id/id_profile"
+        android:orderInCategory="102"
+        android:icon="@drawable/ic_my_profile"
+        app:showAsAction="never"/>
+    <item
+        android:title="عن التطبيق"
+        android:id="@+id/id_about_injaz"
+        android:orderInCategory="103"
+        android:icon="@drawable/ic_about_app"
+        app:showAsAction="never"/>
+    <item
+        android:title="من نحن"
+        android:id="@+id/id_about_us"
+        android:orderInCategory="104"
+        android:icon="@drawable/ic_about_us"
+        app:showAsAction="never"/>
+</menu>
